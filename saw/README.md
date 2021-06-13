@@ -15,6 +15,8 @@ from dataset import data, data_converted, decision_matrix
 data.set_index('name')
 ```
 
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -27,6 +29,9 @@ data.set_index('name')
         text-align: right;
     }
 </style>
+
+
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -191,6 +196,8 @@ Dalam matrix keputusan (decision matrix) ini kita mengubah nilai dari data dari 
 data_converted.set_index('name')
 ```
 
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -203,6 +210,8 @@ data_converted.set_index('name')
         text-align: right;
     }
 </style>
+
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -283,6 +292,8 @@ Dari conversi tabel diatas, diperoleh matrix keputusan dibawah ini:
 decision_matrix
 ```
 
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -295,6 +306,8 @@ decision_matrix
         text-align: right;
     }
 </style>
+
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -460,6 +473,8 @@ import pandas as pd
 pd.DataFrame(normalize_matrix)
 ```
 
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -472,6 +487,8 @@ pd.DataFrame(normalize_matrix)
         text-align: right;
     }
 </style>
+
+
 
 <table border="1" class="dataframe">
   <thead>
@@ -583,6 +600,8 @@ result = nilai_akhir(normalize_matrix, weight)
 hasil_rekomendasi(data, result)
 ```
 
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -595,6 +614,8 @@ hasil_rekomendasi(data, result)
     	text-align: right;
 	}
 </style>
+
+
 
 <table border="1" class="dataframe">
   <thead>
