@@ -17,21 +17,6 @@ data.set_index('name')
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -198,20 +183,6 @@ data_converted.set_index('name')
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -292,20 +263,6 @@ Dari conversi tabel diatas, diperoleh matrix keputusan dibawah ini:
 decision_matrix
 ```
 
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 
 
 
@@ -475,20 +432,6 @@ pd.DataFrame(normalize_matrix)
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-    	vertical-align: top;
-    }
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-
-
 
 <table border="1" class="dataframe">
   <thead>
@@ -599,22 +542,6 @@ def hasil_rekomendasi(dataset, nilai_akhir):
 result = nilai_akhir(normalize_matrix, weight)
 hasil_rekomendasi(data, result)
 ```
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-    .dataframe tbody tr th {
-    	vertical-align: top;
-    }
-    .dataframe thead th {
-    	text-align: right;
-	}
-</style>
-
 
 
 <table border="1" class="dataframe">
