@@ -341,39 +341,27 @@ Terdapat beberapa metode normalisasi yang dapat digunakan di MCDM (Shih et al., 
 Dalam implementasi ini kita akan menggunakan metode normalisasi max. Dalam normalisasi max terdapat dua buah rumus yang disesuaikan dengan kondisi kriteria yang digunakan.
 Apabila kriteria tersebut **benefit**, maka rumus yang digunakan adalah:
 
-$$
-n_{ij} = \frac{r_{ij}}{r_{max}}
-$$
+![eq1](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq1.png)
 
 Sedangkan apabila kriteria **cost**, maka rumus yang digunakan:
 
-$$
-n_{ij} = \frac{r_{min}}{r_{ij}}
-$$
+![eq2](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq2.png)
 
-$$
-n_{ij} = 1-\frac{r_{ij}}{r_{max}}
-$$
+atau
+
+![eq3](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq3.png)
 
 NB: ${r_{min}}$ dan ${r_{max}}$ merupakan nilai terkecil dan terbesar dari satu kriteria.
 
 Sebagai contoh kita akan menormalisasi baris 1 kolom 1 dari data yang ada pada decision matrix. Dikarenakan kolom pertama dalam decision matrix berasal dari ```clockspeed```, oleh karenanya dia termasuk dalam **benefit**. Sehingga rumus yang digunakan yaitu:
 
-$$
-n_{ij} = \frac{r_{ij}}{r_{max}}
-$$
+![eq1](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq1.png)
 
-$$
-n_{11} = \frac{r_{11}}{r_{max}}
-$$
+![eq4](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq4.png)
 
-$$
-n_{11} = \frac{2}{max(2,3,4,2,4,3)}
-$$
+![eq5](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq5.png)
 
-$$
-n_{11} = \frac{2}{4} = 0.5
-$$
+![eq6](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq6.png)
 
 
 ```python
@@ -502,9 +490,7 @@ Perhitungan nilai akhir ini merupakan perkalian antara matriks yang telah dinorm
 
 Sebagai contoh disini kita akan menghitung nilai akhir pada alternatif "Laptop A":
 
-$$
-A = (0.5 \times 0.2) + (0.25 \times 0.1) + (1.0 \times 0.3) + (0.5 \times 0.25) + (0.33 \times 0.15) = 0.5995
-$$
+![eq7](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq7.png)
 
 Dari perhitungan tersebut didapat nilai akhir dari alternatif "Laptop A" adalah **0.5995**.
 
