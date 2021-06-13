@@ -341,27 +341,27 @@ Terdapat beberapa metode normalisasi yang dapat digunakan di MCDM (Shih et al., 
 Dalam implementasi ini kita akan menggunakan metode normalisasi max. Dalam normalisasi max terdapat dua buah rumus yang disesuaikan dengan kondisi kriteria yang digunakan.
 Apabila kriteria tersebut **benefit**, maka rumus yang digunakan adalah:
 
-![eq1](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq1.png)
+![eq1](./assets/eq1.png)
 
 Sedangkan apabila kriteria **cost**, maka rumus yang digunakan:
 
-![eq2](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq2.png)
+![eq2](./assets/eq2.png)
 
 atau
 
-![eq3](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq3.png)
+![eq3](./assets/eq3.png)
 
 NB: ${r_{min}}$ dan ${r_{max}}$ merupakan nilai terkecil dan terbesar dari satu kriteria.
 
 Sebagai contoh kita akan menormalisasi baris 1 kolom 1 dari data yang ada pada decision matrix. Dikarenakan kolom pertama dalam decision matrix berasal dari ```clockspeed```, oleh karenanya dia termasuk dalam **benefit**. Sehingga rumus yang digunakan yaitu:
 
-![eq1](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq1.png)
+![eq1](./assets/eq1.png)
 
-![eq4](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq4.png)
+![eq4](./assets/eq4.png)
 
-![eq5](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq5.png)
+![eq5](./assets/eq5.png)
 
-![eq6](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq6.png)
+![eq6](./assets/eq6.png)
 
 
 ```python
@@ -490,7 +490,7 @@ Perhitungan nilai akhir ini merupakan perkalian antara matriks yang telah dinorm
 
 Sebagai contoh disini kita akan menghitung nilai akhir pada alternatif "Laptop A":
 
-![eq7](/home/refanda/Desktop/temp/Todo/asisten/scpk/saw/impl/saw/assets/eq7.png)
+![eq7](./assets/eq7.png)
 
 Dari perhitungan tersebut didapat nilai akhir dari alternatif "Laptop A" adalah **0.5995**.
 
