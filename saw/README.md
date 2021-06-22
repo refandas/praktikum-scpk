@@ -368,7 +368,7 @@ Sebagai contoh kita akan menormalisasi baris 1 kolom 1 dari data yang ada pada d
 def normalize(decision_matrix, cost_benefit):
     # Normalisasi data
     normalize_data = list()
-    for row in range(len(decision_matrix)-1):
+    for row in range(decision_matrix.shape[1]):
         temp = list()
         for item in decision_matrix[row]:
             if cost_benefit[row] == 'cost':                
